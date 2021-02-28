@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+  <head>
+  </head>
+  <body>
+    {% block extrahead %}
+      <link href="{% static 'accounts/test.css' %}" rel="stylesheet">
+    {% endblock %}
+
+    <div class='a1'>
+      <h1>テストページ</h1>
+    </div>
+
+    <div class='b1'>
+      <p>
+        {{ text }}
+      </p>
+    </div>
+
+    <div class='c1'>
+      <p>
+        {{ time }}
+      </p>
+    </div>
+
+  </body>
+</html>
