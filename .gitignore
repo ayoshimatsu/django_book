@@ -1,5 +1,5 @@
 *.pyc
-mysite/.idea/
+.idea/
 *.old
 *.swp
 venv/
