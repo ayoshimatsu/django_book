@@ -95,6 +95,10 @@ DATABASES = {
         'PASSWORD': 'hakumen009',
         'HOST': 'localhost',
         'PORT': '',
+        # テスト用にこの行を追加
+        'TEST': {
+            'NAME': 'test_djangotest',
+        },
     }
 }
 
@@ -175,3 +179,7 @@ ACCOUNT_LOGOUT_ON_GET = True
 
 # Media directory
 MEDIA_URL = "/media/"
+
+# バックアップバッチ用
+BACKUP_PATH = 'backup/'
+NUM_SAVED_BACKUP = 30
